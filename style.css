@@ -564,3 +564,16 @@ footer {
     }
 
 }
+
+.board-list {
+    margin-top: 22px;
+}
+
+.board-list p {
+    margin: 0 0 15px;
+    line-height: 1.4;
+}
+
+.board-list strong {
+    color: var(--dark);
+}
