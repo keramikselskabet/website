@@ -1,3 +1,14 @@
+:root {
+    --red: #c90000;
+    --dark: #202326;
+    --grey: #5d6266;
+    --light-grey: #e6e2df;
+    --cream: #f7f5f2;
+    --white: #ffffff;
+
+    --max-width: 1180px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -8,108 +19,548 @@ html {
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
-    line-height: 1.6;
-    background: #ffffff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: var(--dark);
+
+    background: var(--white);
+
+    line-height: 1.55;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: var(--red);
 }
 
 .container {
-    width: min(1000px, 90%);
+    width: min(var(--max-width), calc(100% - 48px));
     margin: 0 auto;
 }
 
-header {
-    padding: 3rem 0 1.5rem;
-    border-bottom: 1px solid #dddddd;
+.narrow {
+    max-width: 850px;
 }
 
-header h1 {
+
+/* HEADER */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-top: 7px solid var(--red);
+    border-bottom: 1px solid #ddd;
+}
+
+.header-inner {
+    min-height: 90px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.logo {
+    width: 205px;
+    display: block;
+}
+
+.logo-link {
+    display: block;
+}
+
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: 28px;
+}
+
+.main-nav a {
+    color: var(--dark);
+
+    text-decoration: none;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    padding: 35px 0 29px;
+
+    border-bottom: 3px solid transparent;
+}
+
+.main-nav a:hover {
+    color: var(--red);
+    border-bottom-color: var(--red);
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 330px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(246, 242, 237, 0.98),
+            rgba(246, 242, 237, 0.82)
+        );
+
+    border-bottom: 7px solid var(--red);
+}
+
+.hero-content {
+    max-width: 650px;
+    padding: 70px 0;
+}
+
+.hero h1 {
+    margin: 0 0 12px;
+
+    font-size: clamp(2.5rem, 5vw, 4.4rem);
+
+    letter-spacing: -0.035em;
+
+    line-height: 1.05;
+}
+
+.hero-lead {
     margin: 0;
-    font-size: 2.4rem;
+
+    max-width: 600px;
+
+    font-size: 1.55rem;
+
+    line-height: 1.35;
+}
+
+
+/* MEETING */
+
+.meeting-section {
+    padding: 70px 0 80px;
+
+    background: var(--cream);
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+
+    color: var(--red);
+
+    font-size: 1.35rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.01em;
+}
+
+.meeting-date {
+    margin: 0 0 10px;
+
+    font-size: 1.25rem;
+
     font-weight: 700;
 }
 
-.subtitle {
-    margin-top: 0.3rem;
-    color: #666666;
+.meeting-heading h2 {
+    margin: 0;
+
+    font-size: clamp(2.1rem, 4vw, 3.6rem);
+
+    letter-spacing: -0.035em;
+
+    line-height: 1.15;
 }
 
-nav {
-    margin-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.3rem;
-}
+.meeting-intro {
+    max-width: 850px;
 
-nav a {
-    color: #222222;
-    text-decoration: none;
+    margin: 28px 0 40px;
+
+    font-size: 1.1rem;
+
     font-weight: 600;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.meeting-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 2fr)
+        minmax(300px, 0.85fr);
+
+    gap: 32px;
+
+    align-items: start;
 }
 
-section {
-    padding: 4rem 0;
-    border-bottom: 1px solid #eeeeee;
+
+/* TALK CARDS */
+
+.talks {
+    display: grid;
+
+    gap: 16px;
 }
 
-section:nth-of-type(odd) {
-    background: #fafafa;
+.talk-card {
+    position: relative;
+
+    padding: 20px 28px;
+
+    background: var(--white);
+
+    border: 1px solid #ddd6d2;
+
+    border-radius: 0 17px 17px 0;
+
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.13);
 }
 
-h2 {
+.talk-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 7px;
+
+    background: var(--red);
+}
+
+.talk-card h3 {
+    margin: 0 0 7px;
+
+    font-size: 1.05rem;
+
+    font-style: italic;
+
+    line-height: 1.35;
+}
+
+.talk-card p {
+    margin: 0;
+
+    color: #555a5d;
+}
+
+.prize-card {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.prize {
+    flex: 0 0 200px;
+
+    color: var(--red);
+
+    font-size: 1.15rem;
+
+    line-height: 1.25;
+}
+
+
+/* REGISTRATION */
+
+.registration-card {
+    padding: 30px;
+
+    background: var(--white);
+
+    border: 1px solid #ddd6d2;
+
+    border-radius: 48px;
+
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.13);
+}
+
+.registration-card h3 {
     margin-top: 0;
+
+    font-size: 1.2rem;
+}
+
+.registration-email {
+    font-size: 1.08rem;
+    font-weight: 800;
+
+    word-break: break-word;
+}
+
+.deadline {
+    color: var(--red);
+
+    font-size: 1.15rem;
+    font-weight: 800;
+}
+
+.event-details {
+    margin-top: 30px;
+    padding-top: 24px;
+
+    border-top: 1px solid var(--light-grey);
+
+    display: grid;
+
+    gap: 22px;
+}
+
+.event-detail {
+    display: grid;
+    gap: 3px;
+}
+
+.event-detail span {
+    color: var(--grey);
+}
+
+
+/* GENERAL INFORMATION */
+
+.info-section {
+    padding: 70px 0;
+
+    background: var(--white);
+}
+
+.info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.info-block {
+    padding: 0 38px;
+
+    border-right: 1px solid #ddd;
+}
+
+.info-block:first-child {
+    padding-left: 0;
+}
+
+.info-block:last-child {
+    padding-right: 0;
+    border-right: 0;
+}
+
+.info-block h2,
+.standard-section h2,
+.contact-section h2 {
+    margin-top: 0;
+
+    font-size: 1.5rem;
+}
+
+.info-block h2::after {
+    content: "";
+
+    display: block;
+
+    width: 45px;
+    height: 4px;
+
+    margin-top: 12px;
+
+    background: var(--red);
+}
+
+.button {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 11px 20px;
+
+    background: var(--red);
+
+    color: white;
+
+    border-radius: 4px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+}
+
+.button:hover {
+    opacity: 0.85;
+}
+
+.link-list {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+.link-list li {
+    margin-bottom: 13px;
+}
+
+.link-list a {
+    text-decoration: none;
+}
+
+
+/* PHD SECTION */
+
+.standard-section {
+    padding: 75px 0;
+
+    background: var(--cream);
+}
+
+.standard-section h2 {
     font-size: 2rem;
 }
 
-h3 {
-    margin-top: 2rem;
+
+/* CONTACT */
+
+.contact-section {
+    padding: 60px 0;
+
+    border-top: 1px solid #ddd;
 }
 
-p {
-    max-width: 750px;
+.contact-inner {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 50px;
 }
 
-ul {
-    padding-left: 1.2rem;
+.footer-logo {
+    width: 220px;
 }
 
-#meeting {
-    background: #f5f5f5;
-}
 
-#meeting h2 {
-    font-size: 2.2rem;
-}
+/* FOOTER */
 
 footer {
-    padding: 2rem 0;
+    padding: 26px 0;
+
+    background: #f4f4f4;
+
+    color: #74787b;
+
     font-size: 0.9rem;
-    color: #666666;
 }
 
-@media (max-width: 700px) {
-    header {
-        padding-top: 2rem;
+.footer-inner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+
+    .header-inner {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 18px 0;
+
+        gap: 8px;
     }
 
-    header h1 {
-        font-size: 2rem;
+    .main-nav {
+        gap: 16px;
     }
 
-    nav {
-        gap: 0.8rem 1rem;
+    .main-nav a {
+        padding: 8px 0;
     }
 
-    section {
-        padding: 3rem 0;
+    .hero {
+        min-height: auto;
     }
 
-    h2 {
-        font-size: 1.7rem;
+    .hero-content {
+        padding: 55px 0;
     }
+
+    .meeting-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .info-block {
+        padding: 0;
+
+        border-right: 0;
+    }
+
+    .prize-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .prize {
+        flex: auto;
+    }
+
+    .contact-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .container {
+        width: min(100% - 30px, var(--max-width));
+    }
+
+    .logo {
+        width: 175px;
+    }
+
+    .meeting-section {
+        padding-top: 50px;
+    }
+
+    .registration-card {
+        border-radius: 28px;
+    }
+
 }
