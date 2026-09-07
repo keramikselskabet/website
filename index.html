@@ -3,172 +3,346 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danish Ceramic Society (DAKS)</title>
+
+    <title>Danish Ceramic Society</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <div class="container">
-        <h1>Danish Ceramic Society</h1>
-        <p class="subtitle">A network for companies, universities and individuals</p>
+<header class="site-header">
+    <div class="container header-inner">
 
-        <nav>
-            <a href="#about">About</a>
+        <a href="#home" class="logo-link">
+            <img src="daks-logo.svg"
+                 alt="DAKS – Danish Ceramic Society"
+                 class="logo">
+        </a>
+
+        <nav class="main-nav">
+            <a href="#home">Home</a>
             <a href="#meeting">Annual Meeting</a>
+            <a href="#about">About</a>
             <a href="#membership">Membership</a>
-            <a href="#board">Board</a>
-            <a href="#phd">PhD Prize</a>
-            <a href="#events">Past Events</a>
+            <a href="#phd-prize">PhD Prize</a>
             <a href="#contact">Contact</a>
         </nav>
+
     </div>
 </header>
 
-<section id="meeting">
+
+<main>
+
+<!-- HERO -->
+
+<section id="home" class="hero">
     <div class="container">
-        <h2>Annual Meeting 2026</h2>
 
-        <p>
-            The annual meeting of the Danish Ceramic Society will take place
-            on 29 October 2026 at ROCKWOOL near Roskilde.
-        </p>
+        <div class="hero-content">
 
-        <p>
-            Theme: <strong>Machine Learning for Ceramics</strong>
-        </p>
+            <h1>Danish Ceramic Society</h1>
 
-        <p>
-            More details and registration information will be announced soon.
-        </p>
+            <p class="hero-lead">
+                A network for companies, universities and individuals
+                interested in ceramic and glass materials.
+            </p>
+
+        </div>
+
     </div>
 </section>
 
-<section id="about">
+
+<!-- ANNUAL MEETING -->
+
+<section id="meeting" class="meeting-section">
+
     <div class="container">
-        <h2>About DAKS</h2>
 
-        <p>
-            The Danish Ceramic Society (Dansk Keramisk Selskab, DAKS) is a network
-            of individuals, companies and research institutions working with
-            ceramic materials and processes.
-        </p>
+        <div class="meeting-heading">
 
-        <p>
-            The society mainly deals with technical ceramics such as glasses,
-            electroceramics, fuel cells, ceramic superconductors and catalysts.
-        </p>
+            <p class="eyebrow">
+                DANISH CERAMIC SOCIETY · ANNUAL MEETING
+            </p>
 
-        <p>
-            DAKS organizes meetings and networking activities to strengthen
-            collaboration between Danish industry and research.
-        </p>
+            <p class="meeting-date">
+                29 October 2026
+            </p>
 
-        <p>
-            The society is affiliated with the European Ceramic Society (ECerS)
-            and the International Commission on Glass (ICG).
-        </p>
+            <h2>
+                Machine Learning – Ceramics &amp; Glass
+            </h2>
+
+            <p class="meeting-intro">
+                Join us to network and discuss ceramics, glass and new
+                technological opportunities with AI for both industry
+                and academia!
+            </p>
+
+        </div>
+
+
+        <div class="meeting-grid">
+
+            <div class="talks">
+
+                <article class="talk-card">
+                    <h3>
+                        Machine Learning for Ceramic Microstructure Analysis
+                    </h3>
+                    <p>Julian Schmid (CeramTec)</p>
+                </article>
+
+
+                <article class="talk-card">
+                    <h3>
+                        Accelerated design of disordered materials
+                    </h3>
+                    <p>Kasper Tolborg (Aalborg University)</p>
+                </article>
+
+
+                <article class="talk-card">
+                    <h3>
+                        Development of lead-free piezoelectric ceramics
+                        assisted by machine learning
+                    </h3>
+                    <p>Iman Mehdipour (CTS)</p>
+                </article>
+
+
+                <article class="talk-card">
+                    <h3>
+                        AI and Machine Learning in Production Systems in ROCKWOOL
+                    </h3>
+                    <p>
+                        Kristian Skovgård Jørgensen (ROCKWOOL)
+                    </p>
+                </article>
+
+
+                <article class="talk-card prize-card">
+                    <div>
+                        <h3>
+                            Rescale: Refitting ceramic components for large-scale
+                            solid oxide electrolyzer applications
+                        </h3>
+
+                        <p>
+                            Anne Lyck Smithuysen (Dynelectro)
+                        </p>
+                    </div>
+
+                    <strong class="prize">
+                        The 2025 DAKS PhD Prize Award
+                    </strong>
+                </article>
+
+            </div>
+
+
+            <aside class="registration-card">
+
+                <h3>Registration by email to</h3>
+
+                <p>
+                    <a href="mailto:keramikselskabet@gmail.com"
+                       class="registration-email">
+                        keramikselskabet@gmail.com
+                    </a>
+                </p>
+
+                <p class="deadline">
+                    by 15 October.
+                </p>
+
+                <p>
+                    DAKS members &amp; students free of charge,
+                    others 500 kr.
+                </p>
+
+                <p>
+                    All participants are invited to bring posters
+                    on any ceramics and/or glass related topic.
+                </p>
+
+
+                <div class="event-details">
+
+                    <div class="event-detail">
+                        <strong>Thursday 29 October 2026</strong>
+                        <span>12:00–16:00 · Lunch included</span>
+                    </div>
+
+                    <div class="event-detail">
+                        <strong>ROCKWOOL A/S</strong>
+                        <span>
+                            Hovedgaden 584<br>
+                            2640 Hedehusene
+                        </span>
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
     </div>
+
 </section>
 
-<section id="membership">
-    <div class="container">
-        <h2>Membership</h2>
 
-        <p>
-            Membership is open to companies, universities, students and individuals
-            with an interest in ceramic and glass materials.
-        </p>
+<!-- INFORMATION -->
 
-        <p>
-            Please contact the board for information regarding membership fees
-            and registration.
-        </p>
+<section class="info-section">
+
+    <div class="container info-grid">
+
+
+        <div id="about" class="info-block">
+
+            <h2>About DAKS</h2>
+
+            <p>
+                The Danish Ceramic Society is a network for companies,
+                universities and individuals with an interest in ceramic
+                and glass materials.
+            </p>
+
+            <p>
+                The society promotes exchange of knowledge and contact
+                between academia and industry within ceramic science,
+                technology and applications.
+            </p>
+
+        </div>
+
+
+        <div id="membership" class="info-block">
+
+            <h2>Membership</h2>
+
+            <p>
+                DAKS is open to students, researchers, companies and
+                other organisations with an interest in ceramics
+                and glass.
+            </p>
+
+            <a href="mailto:keramikselskabet@gmail.com"
+               class="button">
+                Contact us about membership
+            </a>
+
+        </div>
+
+
+        <div class="info-block">
+
+            <h2>Useful links</h2>
+
+            <ul class="link-list">
+
+                <li>
+                    <a href="https://ecers.org/"
+                       target="_blank"
+                       rel="noopener">
+                        European Ceramic Society (ECerS)
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://ceramics.org/"
+                       target="_blank"
+                       rel="noopener">
+                        The American Ceramic Society
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
     </div>
+
 </section>
 
-<section id="board">
-    <div class="container">
-        <h2>Board</h2>
 
-        <ul>
-            <li>Astri Bjørnetun Haugen, DTU – President</li>
-            <li>Erling Ringgaard, CTS Denmark – Vice-President</li>
-            <li>Jens Christiansen, DTI</li>
-            <li>Yuanzheng Yue, Aalborg University</li>
-            <li>Mette Solvang, ROCKWOOL International</li>
-            <li>Andreas Kaiser, DTU</li>
-        </ul>
+<!-- PHD PRIZE -->
+
+<section id="phd-prize" class="standard-section">
+
+    <div class="container narrow">
+
+        <p class="eyebrow">DAKS PHD PRIZE</p>
+
+        <h2>Recognising excellent Danish PhD research</h2>
+
+        <p>
+            The DAKS PhD Prize is awarded annually by the Danish Ceramic
+            Society to the best PhD thesis on ceramics or glass from a
+            Danish university.
+        </p>
+
+        <p>
+            The prize consists of a diploma and 2,500 DKK.
+        </p>
+
+        <p>
+            Nominations should be sent to
+            <a href="mailto:keramikselskabet@gmail.com">
+                keramikselskabet@gmail.com
+            </a>.
+        </p>
+
     </div>
+
 </section>
 
-<section id="phd">
-    <div class="container">
-        <h2>DAKS PhD Prize</h2>
 
-        <p>
-            Every year the Danish Ceramic Society awards a PhD prize for
-            outstanding doctoral work within ceramics and glass carried out
-            at a Danish university.
-        </p>
+<!-- CONTACT -->
 
-        <p>
-            The prize consists of a diploma and 2500 DKK.
-        </p>
+<section id="contact" class="contact-section">
 
-        <h3>Recent Winners</h3>
+    <div class="container contact-inner">
 
-        <ul>
-            <li>2024 – Peter Grouleff Jensen</li>
-            <li>2023 – Søren Strandskov Sørensen</li>
-            <li>2022 – Esra Eray</li>
-        </ul>
+        <img src="daks-logo.svg"
+             alt="DAKS – Danish Ceramic Society"
+             class="footer-logo">
+
+        <div>
+
+            <h2>Contact</h2>
+
+            <p>
+                <a href="mailto:keramikselskabet@gmail.com">
+                    keramikselskabet@gmail.com
+                </a>
+            </p>
+
+        </div>
+
     </div>
+
 </section>
 
-<section id="events">
-    <div class="container">
-        <h2>Past Events</h2>
+</main>
 
-        <p>
-            DAKS organizes conferences, seminars and industrial visits
-            throughout the year.
-        </p>
-
-        <p>
-            A complete archive of previous meetings will be added here.
-        </p>
-    </div>
-</section>
-
-<section id="contact">
-    <div class="container">
-        <h2>Contact</h2>
-
-        <p>
-            <strong>President</strong><br>
-            Astri Bjørnetun Haugen<br>
-            Technical University of Denmark (DTU)<br>
-            ahua@dtu.dk
-        </p>
-
-        <p>
-            <strong>Treasurer</strong><br>
-            Erling Ringgaard<br>
-            CTS Ferroperm Piezoceramics
-        </p>
-
-        <p>
-            Email: keramikselskabet@gmail.com
-        </p>
-    </div>
-</section>
 
 <footer>
-    <div class="container">
-        <p>© Danish Ceramic Society (DAKS)</p>
+
+    <div class="container footer-inner">
+
+        <span>
+            © 2026 Dansk Keramisk Selskab (DAKS)
+        </span>
+
     </div>
+
 </footer>
+
 
 </body>
 </html>
