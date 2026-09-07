@@ -74,7 +74,7 @@ a {
 }
 
 .logo {
-    width: 205px;
+    width: 290px;
     display: block;
 }
 
@@ -485,7 +485,7 @@ footer {
 
 /* MOBILE */
 
-@media (max-width: 850px) {
+@media (max-width: 550px) {
 
     .header-inner {
         flex-direction: column;
@@ -552,7 +552,7 @@ footer {
     }
 
     .logo {
-        width: 175px;
+        width: 220px;
     }
 
     .meeting-section {
