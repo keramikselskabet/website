@@ -579,3 +579,38 @@ footer {
 .board-list strong {
     color: var(--dark);
 }
+
+/* PhD Prize winners */
+
+.prize-winners-heading {
+    margin-top: 40px;
+    margin-bottom: 18px;
+}
+
+.prize-winners {
+    border-top: 1px solid #ddd6d2;
+}
+
+.winner {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 20px;
+
+    padding: 17px 0;
+
+    border-bottom: 1px solid #ddd6d2;
+}
+
+.winner-year {
+    color: var(--red);
+    font-weight: 800;
+    font-size: 1.05rem;
+}
+
+.winner strong {
+    font-size: 1.02rem;
+}
+
+.winner div span {
+    color: var(--grey);
+}
