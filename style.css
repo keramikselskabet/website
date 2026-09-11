@@ -624,3 +624,12 @@ footer {
     margin-bottom: 10px;
     font-size: 1.05rem;
 }
+
+.membership-fees {
+    padding-left: 20px;
+    margin-top: 8px;
+}
+
+.membership-fees li {
+    margin-bottom: 6px;
+}
