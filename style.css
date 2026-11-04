@@ -655,3 +655,61 @@ footer {
     color: var(--red);
     font-size: 1.08rem;
 }
+
+/* PhD Prize details */
+
+.phd-intro {
+    max-width: 900px;
+}
+
+.prize-details-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.8fr 1.3fr;
+    gap: 35px;
+
+    margin-top: 38px;
+    margin-bottom: 45px;
+}
+
+.prize-detail {
+    padding-right: 30px;
+    border-right: 1px solid #ddd6d2;
+}
+
+.prize-detail:last-child {
+    padding-right: 0;
+    border-right: 0;
+}
+
+.prize-detail h3 {
+    margin-top: 0;
+    font-size: 1.15rem;
+}
+
+.prize-detail ul {
+    padding-left: 20px;
+}
+
+.prize-detail li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 850px) {
+
+    .prize-details-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .prize-detail {
+        padding-right: 0;
+        padding-bottom: 25px;
+        border-right: 0;
+        border-bottom: 1px solid #ddd6d2;
+    }
+
+    .prize-detail:last-child {
+        border-bottom: 0;
+    }
+
+}
