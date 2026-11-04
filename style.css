@@ -633,3 +633,25 @@ footer {
 .membership-fees li {
     margin-bottom: 6px;
 }
+
+/* ECerS student opportunity */
+
+.student-opportunity-section {
+    padding: 70px 0;
+    background: var(--cream);
+}
+
+.student-opportunity-section h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.student-opportunity-content {
+    max-width: 900px;
+}
+
+.student-deadline {
+    margin-top: 28px;
+    color: var(--red);
+    font-size: 1.08rem;
+}
